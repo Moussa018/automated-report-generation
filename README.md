@@ -1,4 +1,4 @@
-Automated Report Generation
+#### Automated Report Generation
 
 ---
 
