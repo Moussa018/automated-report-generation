@@ -7,7 +7,7 @@ The entire infrastructure is provisioned using Terraform and tested locally usin
 ## Architecture
 
 <p align="center">
-  <img src="./schemas.png" alt="Cloud Native Architecture" width="800">
+  <img src="./schema.png" alt="Cloud Native Architecture" width="800">
 </p>
 
 
