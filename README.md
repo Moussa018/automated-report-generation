@@ -1,4 +1,4 @@
-#### Automated Report Generation
+## Cloud Native Report Generator
 
 ---
 
@@ -88,6 +88,7 @@ bash scripts/lambda.sh
 ```
 
 ---
+
 ## Simulation d'e-mails (AWS SES)
 
 Dans ce projet, l'envoi d'e-mails via **Amazon SES** est entièrement simulé. Puisque **LocalStack** fonctionne comme un environnement sandbox donc isolé, aucun message ne sera réellement acheminé vers Internet. Cela permet de tester la logique de notification sans configurer de vrais domaines ou risquer d'envoyer des spams durant le développement.
@@ -100,6 +101,7 @@ Exécutez la commande suivante dans votre terminal :
 
 ```bash
 awslocal sesv2 list-emails
+```
 
 ## Variables d'environnement (Lambda)
 
