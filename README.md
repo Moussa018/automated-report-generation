@@ -1,14 +1,10 @@
 ## Cloud Native Report Generator
 
----
-
 ## Description
 
 Ce projet automatise la génération de rapports CSV à partir de données de ventes et d'inventaire stockées dans S3. Une fonction AWS Lambda récupère les fichiers source, calcule les statistiques clés (ventes totales, stock, ratio ventes/inventaire), produit un rapport consolidé, le sauvegarde dans un bucket S3 de sortie, et l'envoie par e-mail via Amazon SES.
 
 L'ensemble de l'infrastructure est provisionné avec **Terraform** et testé localement grâce à **LocalStack**.
-
----
 
 ## Architecture
 
@@ -21,7 +17,6 @@ inventory CSV      send_email_report()      YYYYMMDD.csv
                    SES (email)
 ```
 
----
 
 ## Stack technique
 
@@ -33,7 +28,6 @@ inventory CSV      send_email_report()      YYYYMMDD.csv
 | IaC            | Terraform ~5.0           |
 | Local dev      | LocalStack + Docker       |
 
----
 
 ## Lancement rapide
 
@@ -64,7 +58,6 @@ awslocal s3 cp data/samples_data.csv  s3://report-data-storage/inventory/samples
 bash scripts/lambda.sh
 ```
 
----
 
 ## Structure du projet
 
@@ -86,8 +79,6 @@ bash scripts/lambda.sh
 │   └── lambda.sh             # Invocation manuelle de la Lambda
 └── docker-compose.yaml       # LocalStack
 ```
-
----
 
 ## Simulation d'e-mails (AWS SES)
 
